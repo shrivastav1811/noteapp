@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.dark-mode{
+  background-color:black;
+
+}
+
+.dark-mode h1{
+    color: white;
+}
+
+.container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    min-height: 100vh;
+}
+
+.notes-list{
+   display: grid;
+   grid-gap: 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+}
+
+.note.new{
+    background-color: #68aaa5;
+}
+
+textarea{
+    border:none;
+    resize: none;
+    background-color: #68aaa5;
+    
+}
+
+.save{
+    background-color:rgb(219, 201, 201);
+    border: none;
+    border-radius: 1.5rem;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+.save:hover{
+    background-color:rgb(168, 135, 135);
+    cursor: pointer;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.note{
+  background-color: #fef68a;
+  border-radius: 1rem;
+  padding: 1rem;
+  min-height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.delete-icon{
+    cursor: pointer;
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: rgb(219, 201, 201);
+    border-radius: 1rem; 
+    padding: .5rem;
+    margin-bottom: 2rem;
+    margin-top: 1.3rem;
+
+}
+
+.search input{
+    border: none;
+    background-color: rgb(219, 201, 201);
+     
+}
+
+.search input:focus{
+    outline: none;
+}
